@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: bloxvalues
+    runtime: node
+    buildCommand: npm ci
+    startCommand: npm start
+    plan: free
+    disk:
+      name: bloxvalues-data
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DATABASE_PATH
+        value: /app/data/bloxvalues.db
+      - key: DISCORD_CLIENT_ID
+        sync: false
+      - key: DISCORD_CLIENT_SECRET
+        sync: false
+      - key: DISCORD_REDIRECT_URI
+        sync: false
+      - key: OWNER_DISCORD_ID
+        sync: false
+      - key: DISCORD_SERVER_URL
+        sync: false

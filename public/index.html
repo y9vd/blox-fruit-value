@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0e14" />
+    <meta name="description" content="BloxValues — check Blox Fruits values, demand, and trade fairness." />
+    <title>BloxValues — Trade with clarity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <header class="topbar">
+      <a class="brand" href="#/home"><span class="brand-mark">B</span><span>Blox<span class="accent">Values</span></span></a>
+      <nav class="nav-links">
+        <a href="#/values" data-nav="values">Values</a>
+        <a href="#/calculator" data-nav="calculator">Calculator</a>
+        <a href="#/admin" data-nav="admin" class="admin-nav hidden">Admin</a>
+      </nav>
+      <div class="top-actions">
+        <a id="discord-server" class="button button-ghost hide-mobile" target="_blank" rel="noreferrer">Join Discord</a>
+        <a id="auth-button" class="button button-primary">Login with Discord</a>
+        <button id="mobile-menu" class="icon-button" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+    <main id="app"></main>
+    <footer class="footer"><div class="footer-inner"><span class="brand small"><span class="brand-mark">B</span><span>Blox<span class="accent">Values</span></span></span><span>Sample values are placeholders. Always verify trades with your community.</span><span>Built for better trades.</span></div></footer>
+    <div id="toast-root" class="toast-root"></div>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
